@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block main %}
+<h1>Затычка</h1>
+<ul>
+    <li>{{ user_object.email }}</li>
+    <li>{{ user_object.username }}</li>
+    <li>{{ user_object.taxpayer }}</li>
+</ul>
+{% endblock main %}

@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block main %}
+<h1>Затычка</h1>
+<ul>
+    {% for user in users %}
+        <li>{{ user.email }}</li>
+    {% endfor %}
+</ul>
+{% endblock main %}

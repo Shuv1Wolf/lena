@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block main %}
+    {% for news in data %}
+    <h1>{{ news.title }}</h1>
+    <p>{{ news.description }}</p>
+        <img src="{{ news.image }}">
+        {{ news.image }}
+    <p>{{ news.date }}</p>
+    {% endfor %}
+{% endblock main %}

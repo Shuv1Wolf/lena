@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block main %}
+<h1>Затычка</h1>
+    <p>{{ news.title }}</p>
+    <p>{{ news.description }}</p>
+    <p>{{ news.date }}</p>
+    <img src="media/{{ news.image }}">
+{% endblock main %}
+
